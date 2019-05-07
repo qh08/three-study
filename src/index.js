@@ -15,4 +15,4 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
-components.line.default({scene, camera, renderer});
+components.bufferGeo.default({scene, camera, renderer});
