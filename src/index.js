@@ -5,9 +5,9 @@ const components = require("./components/*.js");
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
-  75,
+  50,
   window.innerWidth / window.innerHeight,
-  0.1,
+  1,
   1000
 );
 
@@ -15,4 +15,4 @@ const renderer = new THREE.WebGLRenderer();
 renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
-components.box.default(THREE, {scene, camera, renderer});
+components.line.default({scene, camera, renderer});

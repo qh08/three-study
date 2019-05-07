@@ -1,4 +1,4 @@
-export default function(THREE, {scene, camera, renderer}) {
+export default function({scene, camera, renderer}) {
   const geometry = new THREE.BoxGeometry(1, 1, 1);
   const material = new THREE.MeshBasicMaterial({
     color: "#0000FF"
