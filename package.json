@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "commit": "npx git-cz"
+    "commit": "npx git-cz",
+    "cmt": "npx git-cz"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +14,12 @@
     "three": "^0.104.0"
   },
   "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0",
     "less": "^3.9.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
